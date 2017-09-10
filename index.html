@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>How I Met Your Mother  | Trivia Quiz</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<div class="quiz-image">
+			<img src="images/himym.jpg">
+		</div>
+		<h1 class="quiz-title">"How I Met Your Mother" Interactive Quiz</h1>
+	</header>
+	<main>
+		<!-- This will appear on page load. -->
+		<div class="quiz-container" >
+
+
+			<!-- Will make this hidden in jQuery -->
+			<div id="js-quiz-start" class="">
+				<p>Welcome!<p>
+				<button id="js-begin-button">Click Here To Start</button>
+			</div>
+
+
+			<!-- This will appear and link up to jQuery. -->
+			<section id="js-quiz-section" class="hidden">
+				<h3 class="js-quiz-question">Questions Goes Here</h3>
+				<form id="quiz-form">
+					<label class="answer">
+						<input type="radio" name="quizChoice" class="js-quiz-choice-button" value="0">
+						<span class="js-quiz-choice">quiz-choice</span>
+					</label><br>
+					<label class="answer">
+						<input type="radio" name="quizChoice" class="js-quiz-choice-button" value="1">
+						<span class="js-quiz-choice">quiz-choice</span>
+					</label><br>
+					<label class="answer">
+						<input type="radio" name="quizChoice" class="js-quiz-choice-button" value="2">
+						<span class="js-quiz-choice">quiz-choice</span>
+					</label><br>
+					<label class="answer">
+						<input type="radio" name="quizChoice" class="js-quiz-choice-button" value="3">
+						<span class="js-quiz-choice">quiz-choice</span>
+					</label>
+					<button id="js-submit-button" type="submit">Submit Answer</button>
+				</form>
+			</section>
+
+			<div id="js-quiz-result"></div> <!-- This will appear at the end of the interactive quiz. -->
+
+			<div id="js-quiz-feedback" class="hidden">Here's How's You Did.</div> <!-- Will shows whether answer is correct, incorrect, or need to select an answer. -->
+
+		</div>
+			<div class="js-quiz-restart-container"> <!-- This will appear after the begin button -->
+				<button id="js-quiz-restart-button" class="hidden">Restart Interactive Quiz</button>
+			</div>
+	</main>
+</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>
+</html>
